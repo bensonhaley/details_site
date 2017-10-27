@@ -1,12 +1,15 @@
 body {
-  font-family: "Helvetica", sans-serif;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
+h1 {
+  text-align: center;
+}
 h2 {
-  color: #7A0019;
+  color: #404040;
 }
 
-#contact {
-  background-color: #FFDE7A;
+#table_of_contents {
+  background-color: #33C1FF;
   padding: 2%;
 }
