@@ -6,10 +6,15 @@ h1 {
   text-align: center;
 }
 h2 {
+  text-align: center;
   color: #404040;
 }
 
 #table_of_contents {
   background-color: #33C1FF;
   padding: 2%;
+}
+
+#container {
+  margin: 40px;
 }
