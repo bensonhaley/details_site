@@ -2,6 +2,7 @@
 <head>
   <title>bensonhaley-seniorcapstone</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|PT+Sans" rel="stylesheet">
 </head>
 
 
@@ -13,60 +14,126 @@
 <div id="table_of_contents">
 <details><summary>table of contents</summary>
 <ul>
-  <li><strong><a href="#intro">HTML's <i>details</i> element</a></strong></li>
-  <li><strong><a href="#summary">accompanying details: the summary element</a></strong></li>
-  <li><strong><a href="#java">details and Javascript</a></strong></li>
+  <li><strong><a href="#haas">Christina Haas’ “on the relationship between old and new technologies”</a></strong></li>
+  <li><strong><a href="#intro">HTML's <i>details</i> element (and <i>summary</i> element)</a></strong></li>
+  <li><strong><a href="#arrival"><i>details</i> arrival: HTML5</a></strong></li>
+  <li><strong><a href="#print"><i>details</i> and print: parallels and differences</a></strong></li>
+  <li><strong><a href="#java"><i>details</i>and Javascript</a></strong></li>
   <li><strong><a href="#browser">browser support</a></strong></li>
-  <li><strong><a href="#print">details and print: parallels and differences</a></strong></li>
 </ul>
 </details>
 </div>
 <h2>defining this project</h2>
-<img src="writing_tools.jpg" alt="example" align=right>
-<p>In the digital age, many of us move through online spaces and print spaces differently. We’ve learned them in different contexts, and their interfaces still just feel fundamentally different. This is not to say we might not use an online article and a print article for the same purpose, just that we simply can’t seem to get over that physical, psychological difference we “feel.”</p>
+<img style="float: right; padding-left: 50px;" src="writing_tools.jpg" alt="example">
+<p>In the digital age, many of us move through online spaces and print spaces differently. We’ve learned them in different contexts, and perhaps use them for different reasons. On top of this, the physical difference between these spaces is hard to get over.</p>
 
-<p>Consequently, we often forget to look for the continuity between these two spaces. The web space and mobile space are here, and will likely be our dominant “spaces” from here on out. And the technology that has allowed us to reach this point has been so revolutionary, and so new—it’s difficult to see print and web as the same.</p>
+<p>Consequently, we may forget to look for the continuity between these two spaces. Print has had a long history, and web technology has been so revolutionary, and new—it’s difficult to see print and web as the same.</p>
 
-<p>The purpose of this project is to set a reminder. Computer technology and the web may have been created by technical geniuses, but someone eventually realized that they needed to be designed for humans, humans with a history of interactions with tools and with writing. It’s unfair to leave the print tradition out of the conversation when we’re looking at humans’ relationship with computer and web technology. Expanded interactivity and multimodality will continue to claim more of digital space, but the web has both grown out of and continues to be shaped by print and its history. To competently navigate digital spaces, we should be aware of how they both reflect and extend the printed space.
+<p>The purpose of this project is to remind that it’s impossible to look at print and web spaces as truly separate. The conversation about humans’ relationship with computer and web technology must include discussion of print. The web has both grown out of and continues to be shaped by print and its history. To competently navigate digital spaces, we should be aware of how they both reflect and extend the printed space.</p>
+
+<p>In order to concretize this idea, this project will look at the 'history,' or development, of an individual HTML element in the context of how it relates to the print tradition.</p>
+
+<h2><a name="haas">Christina Haas’ “on the relationship between old and new technologies”</a></h2>
+
+<p>This project is influenced by Christina Haas’ article “On the Relationship Between Old and New Technologies.” Haas’ article is older (published in 1999), but its arguments and ideas are still relevant today, and especially relevant to this project.</p>
+<p>In “On the Relationship Between Old and New Technologies,” Haas (1999) looks to the complex relationship between ‘old’ and ‘new’ technologies—focusing not on how they differ but on how they overlap and influence on another. Haas (1999) wishes to combat the notion of “simple replacement” and “straightforward progress” when it comes to technological development (p. 210). When we accept new iterations of a technological tool as always better than the old, we may be ignoring how people actually interact with and think about these tools in the real world (Haas, 1999). In the article, Haas also focuses on how our view of old and new technologies affects how we understand technological literacy. Haas argues that when we accept the notion of “simple replacement” and “straightforward progress,” we may misunderstand what ‘literacy’ really means at that time and in particular contexts. Ultimately, Haas (1999) wants to highlight that technology use is always tied to wider cultural and historical practices (p. 212). In order to effectively work with tech in our lives and work, we must take a critical look at the history and context that surrounds a particular tool or technology.
 </p>
+
 
 <h2><a name="intro">HTML’s <i>details</i> element (and <i>summary</i> element)</a></h2>
-<p>The focus of this project is a small but significant snippet of HTML markup, which interacts with software then hardware to build a feature of the digital space discussed above. This particular HTML element represents a visual output that is grounded in print but also extends into new territory.</p>
+<div id="main_section">
 
-<p>The W3C’s HTML 5.3 documentation defines the details element as “a disclosure widget from which the user can obtain additional information or controls.”</p>
+ <p>The focus of this project is a small but significant piece of HTML5 markup. This particular element creates an output in ‘digital space’ that (this project argues) is grounded in print but also extends into new territory.</p>
 
-<p>The details element is categorize as an interactive element, and so falls under the HTML category of interactive content, which is “content that is specifically intended for user interaction” (3.2.4.2.7. W3C Specs). The details element allows a viewer to click on a piece of text in order to “open” or reveal an additional section of text.
+ <p>The W3C’s HTML 5.3 documentation defines the details element as “a disclosure widget from which the user can obtain additional information or controls.”</p>
+
+ <p>The details element is categorized as an interactive element, falling under the HTML category of ‘interactive content.’ HTML interactive content is “content that is specifically intended for user interaction” (3.2.4.2.7. W3C Specs). The details element allows a viewer to click on a piece of text in order to “open” or reveal an additional section of text:</p>
+
+</div>
+<div id="example">
+<h3>EXAMPLE:</h3><br>(click "summary")
+<br><br>
+<details><summary><i>Summary</i></summary>
+<br><i>Details</i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</details>
+</div>
+
+
+<h2><a name="arrival"><i>details</i> arrival: HTML5</a></h2>
+<img style="float: right; padding-left: 50px; padding-bottom: 50px;" src="html5.jpg" alt="html5 illustration">
+<p>The summary and details elements are among the list of new ‘semantic elements’ introduced in HTML5. “A semantic element clearly describes its meaning to both the browser and the developer” (HTML Semantic Elements, W3C). Summary and details came in alongside a number of other major semantic elements that were introduced with the current HTML5; header, footer, nav, section, and article.</p>
+
+<p>The WHAT WG (Web Hypertext Application Technology Working Group) and W3C (World Wide Web Consortium), current developers of HTML, added these semantic elements in order to 'streamline' web developers’ current page-structuring process. Previously, with HTML4, developers had been “defining their own id/class names to style elements: header, navigation, main, article etc,” often with div tags (HTML Semantic Elements, Why Semantic Elements, W3C). The new HTML5 semantic elements were implemented in order to make HTML page structure definitions more 'understandable' for search engines and other software. This move was made towards more semantic representation in order to prepare for the future; where data will be read, processed, and organized more and more by machines and less by humans. The current developers of HTML are striving for a web where data is more easily “shared and reused across applications, enterprises, and communities" (HTML Semantic Elements, Why Semantic Elements, W3C).
 </p>
-<p>
-<table width="400">
-  <td><img src="details 1.png" alt="example"></td>
-  <td><img src="details 2.png" alt="example"></td>
-  <td><img src="details 3.png" alt="example"></td>
-</table>
-</p>
-
-<h2><i>details</i> arrival: HTML5</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar mi magna. Aliquam sodales felis odio, eget ultrices lorem rutrum vel. Proin eget lorem nec tellus auctor maximus ut non nunc. Vestibulum pharetra nec tortor tempus sodales. Cras nec nibh eros. Fusce quis ex at felis venenatis imperdiet ut non enim. Vestibulum quis elit eget dolor maximus blandit. Etiam ac ullamcorper est. Ut tempus nibh sit amet augue suscipit suscipit. Duis at venenatis purus, ac egestas tortor. Quisque pretium orci sit amet magna iaculis, vel varius ante tincidunt. Maecenas at velit nec sapien facilisis lacinia. Nulla non molestie est. Vestibulum ut mi lacus. Vestibulum at nisl feugiat, efficitur ex ac, ultrices metus.</p>
 
 <h2><a name="print"><i>details</i> and print: parallels and differences</a></h2>
-<p>It’s important to first look to the ways in which HTML’s details element can be connected to the printed page and the print tradition. The printed word is populated with many text “structures” that match that of the summary/details element. These structures include a sequence and visual hierarchy that interact to create the semantic meaning of the structure: the first section of text, shorter in length and perhaps bolded, features the “broader” component, while the following section, situated below and often longer in length, set apart by indentation or a smaller point size, offers elaboration on the component it follows.</p>
+<img style="float: right; padding-left: 50px; padding-bottom: 50px;" src="hippocratis.jpg" alt="printed page">
+<p>Because this project focuses on the continuity between print and the web, we will first look at the ways in which the details element can be connected to print.</p>
 
-<p>When we see this structure, we intuitively recognize the relationship between these two components. It’s entirely ubiquitous within the realm of the printed page.</p>
+<blockquote>
+HTML5 Specifications’ definition of the details and summary elements:<br>
+<i>Summary</i><br>
+“The summary element represents a summary, caption, or legend for the contents of the details element”<br>
+<i>Details</i><br>
+“...represents the additional information or controls”
+</blockquote>
+<br>
+<p>The print tradition is filled with text ‘structures’ that take the same shape that summary/details elements make together. Wider examples include the chapter title and chapter content, or the topic sentence at the beginning of a paragraph. The HTML5 Specifications specifically reference the “summary, caption, and legend” as comparisons for the HTML summary element. These are textual components that have a long history in the world of print:</p>
+<br>
+<blockquote>
+Summary: “A brief statement or account of the main points of something” (Oxford Dictionary)<br>
+Legend: “The wording on a map or diagram explaining the symbols used” (Oxford Dictionary)<br>
+Caption: “A title or brief explanation accompanying an illustration, cartoon, or poster” (Oxford Dictionary)
+</blockquote>
+<br>
+<img style="float: left; padding-right: 50px; padding-bottom: 50px;" src="photo.jpg" alt="printed page">
+<img style="float: right; padding-left: 50px; padding-bottom: 50px;" src="legend.jpg" alt="printed page">
+<br>
+<p>This two-part structure is ubiquitous within the realm of the printed page. When we see it, we can quickly recognize the relationship between these two components. The first part of the structure gives us the ‘key message,’ and the second part gives us the content, most often an expansion of the ideas presented in the ‘title’ section. Both feed our understanding of the other.</p>
+<br>
+<div id="extra">
+  In a recent study, Ahmadi (2011) looks at the importance and of the title. “A title prepares the readers for comprehending a text,” and “gives macro-structural information and activates cognitive schemata which facilitates the integration of textual information” (Ahmadi, 2011, p. 164). The study found that the title is so powerful that it can lead readers to attach meaning to even a ‘nonsense’ paragraph; just the placement of a title above a set of otherwise unrelated sentences lead readers to feel they had gleaned a main idea from the paragraph (Ahmadi, 2011, p. 169).
+</div>
+<br>
+<p>The details and summary elements have taken this structure and adapted it for digital space. The key difference that exists between the summary/details ‘widget’ and its parallels in print, the thing that brings this structure into digital territory, is the interactivity. In the past, it’s certain that map makers or cartoonists or technical writers would have rejoiced at the opportunity to have an expandable section that they could include under their captions or symbols or footnotes. A space to put ‘additional information,’ that won’t take up precious space within one’s document as a whole… What could be better?</p>
 
-There are ways that the details element can be seen as more tailored to a web environment than other HTML elements&mdash;as diverging from the print tradition more significantly. The details tag creates a text element, but the interactivity that results is something that we do no necessarily see within the print tradition.
-</p>
+ <p>The existence of the details/summary widget, and the wider function of having an expandable/collapsable section of content, can be seen as a direct consequence of what scholars and cultural critics have named 'the attention economy.' With more content online than ever before, crucial and important information competes with what some would define as secondary information—ads, links, sidebars, and more. Space on the web is intimately linked to attention, and attention has become one of the most sought after 'commodities' in the digital age. The details/summary widget creates an easy way for web developers to reserve space for the information they deem most crucial, while still offering inclusion to that secondary content.</p>
 
-<h2><a name="java"><i>details</i> tag and Javascript</a></h2>
-<p>The details and summary elements are especially important to consider when discussing HTML’s development because they create a function that used to require a Javascript to be accomplished. </p>
 
+<h2><a name="java"><i>details</i> and Javascript</a></h2>
+<img style="float: left; padding-right: 50px; padding-bottom: 50px;" src="boxinggloves.jpg" alt="boxing gloves photo">
+<p>As HTML ‘interactive elements,’ the details and summary elements are a notable development in HTML-standards history because they create a function that used to require Javascript (JS) to be implemented. The details and summary elements together create an ‘expand/collapse’ widget natively, making it unnecessary to pull a JS ‘script’ into the HTML code. In the HTML 5.3 Specifications put out by the W3C’s Web Platform Working Group (WebPlat WG), current developers of HTML say that they make the decision to add new elements based on “research into prevailing authoring practices” and in order “to help Web application authors” (HTML 5.3, Editor’s Draft). The idea behind writing more interactivity directly into HTML standards is that it will make it easier on web developers; allowing them to invoke a simple HTML tag, which works natively in the browser, rather than a whole JS script.</p>
+<br>
+<p>But, there has been argument over whether the details and summary elements, and other elements that create functions traditionally made with Javascript, are a necessary or helpful addition to the HTML standards. Within the HTML-standards development community at the W3C, there have been petitions to remove the details and summary elements from the HTML5 Specifications, and there have been subsequent counter-petitions to keep them.</p>
+
+<p>Those behind the petition to remove the details and summary elements from the HTML5 Specifications argue that they are unnecessary because “implementing collapsible behavior is comparatively easy, and can be done with script libraries” (Working Group Decision on ISSUE-93 details). This group has also made the argument that despite being brought in alongside other major semantic elements, the details and summary arguments might not be as ‘semantic’ in nature as has been claimed (Working Group Decision on ISSUE-93 details). This argument rests on the idea that collapsibility of this widget is distinctly presentational, which is the opposite of what the web standards community is trying to do with semantics (Working Group Decision on ISSUE-93 details). Some even argue that the "behavioral" nature of the details/summary widget is a “violation” of HTML’s goal as a markup language (Working Group Decision on ISSUE-93 details).</p>
+
+<p>Counter-arguments were raised quickly in response to this call to eliminate the details and summary elements. Defenders of the widget argued that this function is so common on the web that it is useful for developers to have the option to implement in natively in HTML (Working Group Decision on ISSUE-93 details). Others cited that the opportunity to reduce code size and avoid the myriad of “media-dependent,” inconsistent Javascript implementations of the same function as reason to keep the details/summary elements in the HTML5 Specifications (Working Group Decision on ISSUE-93 details). Finally, proponents of the elements made a significant claim when they presented the argument that these elements do in fact carry semantic value and so are valuable in terms of accessibility (Working Group Decision on ISSUE-93 details). (It was even noted that the HTML Working Group’s Accessibility Task Force argued for retaining the details/summary elements.) This argument rested on the idea that the details and summary elements increases accessibility and are easier to implement than scripted versions—when developing accessible content is easier to do, it’s more attractive to web and content developers.</p>
+<br>
+<p>As of 2010, the dispute over whether or not to keep the details and summary elements in W3C’s HTML5 Specifications was resolved, with Working Group members ultimately agreeing that the arguments against the elements were not as strong as the arguments for them (Working Group Decision on ISSUE-93 details). Because complaints were brought up so quickly after their initial implementation, it’s not unlikely that the details and summary elements will face backlash again in the future. But, for now, the detail/summary widget remains a part of the HTML5 library, available for use by developers.</p>
 
 <h2><a name="browser">browser support</a></h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar mi magna. Aliquam sodales felis odio, eget ultrices lorem rutrum vel. Proin eget lorem nec tellus auctor maximus ut non nunc. Vestibulum pharetra nec tortor tempus sodales. Cras nec nibh eros. Fusce quis ex at felis venenatis imperdiet ut non enim. Vestibulum quis elit eget dolor maximus blandit. Etiam ac ullamcorper est. Ut tempus nibh sit amet augue suscipit suscipit. Duis at venenatis purus, ac egestas tortor. Quisque pretium orci sit amet magna iaculis, vel varius ante tincidunt. Maecenas at velit nec sapien facilisis lacinia. Nulla non molestie est. Vestibulum ut mi lacus. Vestibulum at nisl feugiat, efficitur ex ac, ultrices metus.</p>
+<p>When they were first included within HTML5 specifications, the details and summary elements struggled in terms of browser support. This prevented them from really ‘taking off,’ as developers were afraid to use them for fear of the ‘collapse/expand’ behavior not being supported in many user’s browsers. In contrast, a Javascript implementation offered a reliable way to implement this same function, with just slightly more work. As we’ve seen, this has continued to color the life of these elements.</p>
 
+<p>As of 2017, browser support for the details element has improved. Currently, the only browser that doesn’t offer support is Internet Explorer. As we proceed, we will hopefully see increased support and ease-of-use for these contentious but decidedly useful and interesting HTML elements.</p>
+<br><br><br>
+
+<div id="references">
+<h3>References</h3>
+
+Ahmadi, A. R. (2011). Comprehension of a non-text: The effect of the title and ambiguity tolerance. Journal of Pan-Pacific Association of Applied Linguistics, 15(1), 163-176.
+Haas, C. (1999). On the Relationship Between Old and New Technologies. Computers and Composition 16, 209–228.<br>
+Way, J. (2011, December 6). A Brief History of HTML5. Retrieved November 16, 2017, from https://code.tutsplus.com/articles/a-brief-history-of-html5--net-23064 <br>
+W3C. (2017, December 1). HTML 5.3 Editor’s Draft. Retrieved November 16, 2017, from https://w3c.github.io/html/ <br>
+W3C Public Mailing List Archives. (2010, June 30). Working Group Decision on ISSUE-93 details. Retrieved November 20, 2017, from http://lists.w3.org/Archives/Public/public-html/2010Jun/att-0659/issue-93-decision.html<br>
+Summary [Def. 1]. (n.d.) In Oxford Dictionary Online, Retrieved November 20, 2017, from https://en.oxforddictionaries.com/definition/summary <bR>
+Legend [Def. 3.2]. (n.d.) In Oxford Dictionary Online, Retrieved November 20, 2017, from https://en.oxforddictionaries.com/definition/legend <br>
+Caption [Def. 1]. (n.d.) In Oxford Dictionary Online, Retrieved November 20, 2017, from https://en.oxforddictionaries.com/definition/caption<br>
+</div>
 <br>
 <footer>
-  <p>&copy; 2017 <br> Haley Benson <br> WRIT 4662 Senior Capstone</p>
+  <p>&copy; 2017 | Haley Benson | WRIT 4662 Senior Capstone</p>
 </footer>
 </div>
 </body>
